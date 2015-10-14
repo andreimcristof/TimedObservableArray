@@ -7,6 +7,15 @@ Pushing items into this array will fire up the callback passed into the push met
 
 Usage:
 ```javascript
+var utils = 
+{
+    callbackAlert :function()
+    {
+        console.log("alert - item limit reached!");
+    }    
+}
+
+
 var obsv = new TimedObservableArray();
 obsv.callBackOnLimitReached = utils.callbackAlert;
 obsv.items = [1,2,3];
