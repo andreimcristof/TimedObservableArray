@@ -6,6 +6,7 @@ This is of course achievable with different libraries, but sometimes you may not
 Pushing items into this array will fire up the callback passed into the push method if configured time has elapsed or if configured allowed array size has been reached. You can use this to flush the array's items regularly to some output. 
 
 Usage:
+```javascript
 var obsv = new TimedObservableArray();
 obsv.callBackOnLimitReached = utils.callbackAlert;
 obsv.items = [1,2,3];
@@ -14,7 +15,7 @@ for(var i = 0;i <300;i++)
 {
     obsv.push(i);
 }
-
+```
 
 /Andrei Cristof
 
